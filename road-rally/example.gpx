@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="YOUR APPLICATION NAME HERE" version="1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:openrally="http://www.openrally.org/xmlschemas/GpxExtensions/v1.0.3-DRAFT" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd
+                      http://www.openrally.org/xmlschemas/GpxExtensions/v1.0.3-DRAFT openrally.xsd">
+
+  <metadata>
+    <extensions>
+      <openrally:type>rally</openrally:type>
+      <openrally:units>metric</openrally:units>
+      <openrally:distance>33.86</openrally:distance>
+    </extensions>
+  </metadata>
+
+  <!-- minimum <wpt> must have a distance -->
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>0.0</openrally:distance>
+    </extensions>
+  </wpt>
+
+  <!-- TC -->
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>0.01</openrally:distance>
+      <openrally:timecontrol activate="50" clear="10" name="TC0"/>
+    </extensions>
+  </wpt>
+
+  <!-- Start -->
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>0.1</openrally:distance>
+      <openrally:ss activate="50" clear="10" name="SS1"/>
+    </extensions>
+  </wpt>
+
+  <!-- radio point + medical + police-->
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>0.2</openrally:distance>
+      <openrally:radio/>
+      <openrally:medical/>
+      <openrally:police/>
+    </extensions>
+  </wpt>
+
+  <!-- chicane -->
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>0.3</openrally:distance>
+      <openrally:chicane/>
+      <openrally:chicane_type>single</openrally:chicane_type>
+      <openrally:chicane_entry>left</openrally:chicane_entry>
+    </extensions>
+  </wpt>
+
+  <!-- virtual chicane -->
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>0.4</openrally:distance>
+      <openrally:vc_in/>
+      <openrally:speed>50</openrally:speed>
+    </extensions>
+  </wpt>
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>0.5</openrally:distance>
+      <openrally:vc_end/>
+      <openrally:ez/>
+    </extensions>
+  </wpt>
+
+   <!-- slow zone -->
+   <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>0.6</openrally:distance>
+      <openrally:sz_in/>
+      <openrally:speed>70</openrally:speed>
+    </extensions>
+  </wpt>
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>0.7</openrally:distance>
+      <openrally:sz_end/>
+      <openrally:ez/>
+    </extensions>
+  </wpt>
+
+  <!-- service area -->
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>0.71</openrally:distance>
+      <openrally:service/>
+    </extensions>
+  </wpt>
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>0.79</openrally:distance>
+      <openrally:ez/>
+    </extensions>
+  </wpt>
+
+  <!-- Tulip and Notes drawings -->
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>0.8</openrally:distance>
+      <!-- PNG only -->
+      <openrally:tulip><![CDATA[
+          data:image/png;base64,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
+        ]]>      </openrally:tulip>
+      <!-- PNG wrapped in SVG -->
+      <openrally:notes><![CDATA[
+        <svg>
+          <img href="data:image/png;base64,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"/>
+        </svg>
+        ]]>      </openrally:notes>
+    </extensions>
+  </wpt>
+
+  <!-- Tulip and Notes drawings -->
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>0.9</openrally:distance>
+      <!-- Full SVG -->
+      <openrally:tulip><![CDATA[
+        <svg>
+          <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+        ]]>      </openrally:tulip>
+      <openrally:notes><![CDATA[
+        <svg>
+          <text>SVG Example</text>
+        </svg>
+        ]]>      </openrally:notes>
+    </extensions>
+  </wpt>
+
+  <!-- Flying Finish -->
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>1.0</openrally:distance>
+      <openrally:ff name="FF1"/>
+    </extensions>
+  </wpt>
+
+  <!-- Stop Finish -->
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>1.2</openrally:distance>
+      <openrally:stop_control/>
+    </extensions>
+  </wpt>
+
+  <!-- or any other tags (using them all at once is nonsensical) -->
+  <wpt lat="0" lon="0">
+    <extensions>
+      <openrally:distance>1.23</openrally:distance>
+      <openrally:show_coordinates/>
+      <openrally:gsm_strength/>
+      <openrally:reset/>
+      <!-- reset odo to 0.00 -->
+      <openrally:timecontrol activate="50" clear="10" name="TC99"/>
+      <!-- test with no time requirement -->
+      <openrally:timecontrol activate="50" clear="10" name="TC99" allowed="80"/>
+      <openrally:ss activate="50" clear="10" name="SS1"/>
+      <openrally:service/>
+      <openrally:tyre_marking/>
+      <openrally:refuel/>
+      <openrally:TWZ activate="10" clear="10"/>
+      <openrally:TWZ_end activate="500" clear="30"/>
+      <openrally:HEV/>
+      <openrally:HEV_refuge/>
+      <openrally:media/>
+      <openrally:ez activate="10" clear="10"/>
+      <openrally:radio name="R999"/>
+      <openrally:medical name="A999"/>
+      <openrally:checkpoint activate="50" clear="10" name="CP99"/>
+      <openrally:chicane activate="300" clear="20"/>
+      <openrally:chicane_type>single</openrally:chicane_type>
+      <openrally:chicane_entry>left</openrally:chicane_entry>
+      <openrally:vc_in activate="300" clear="20"/>
+      <openrally:speed>50</openrally:speed>
+      <openrally:vc_end activate="250" clear="20"/>
+      <openrally:sz_in activate="300" clear="20"/>
+      <openrally:speed>50</openrally:speed>
+      <openrally:sz_end activate="500" clear="20"/>
+      <openrally:marshal name="M999"/>
+      <openrally:police/>
+      <openrally:fire/>
+      <openrally:technical/>
+      <openrally:recovery/>
+      <openrally:spectators/>
+      <openrally:prohibited_area/>
+      <openrally:service_park/>
+      <openrally:parking/>
+      <openrally:helicopter/>
+      <openrally:ff activate="100" clear="50" name="FF1"/>
+      <openrally:stop_control activate="200" clear="10"/>
+    </extensions>
+  </wpt>
+</gpx>
