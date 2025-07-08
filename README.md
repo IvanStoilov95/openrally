@@ -44,6 +44,7 @@ These software and hardware projects currently support OpenRally format.
 * Rally Blitz
 * RiverNotes
 * TerraPirata
+* RBI Sport
 
 ## Mailing Lists
 To join the discussion or follow along, subscribe to the OpenRally.org mailing list by sending an email to [openrally-request](mailto:openrally-request@freelists.org?subject=subscribe) with 'subscribe' in the Subject field.
