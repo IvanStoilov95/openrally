@@ -43,7 +43,7 @@
   <xs:element name="sz_end" type="waypointType"/>
 
   <!--
-  safety tags, primarily used in an organiser's mapping/tracking to locate
+  safety tags, primarily used in an organizer's mapping/tracking to locate
   assets on the course.
   -->
   <!-- named ones -->
